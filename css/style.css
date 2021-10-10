@@ -14,3 +14,12 @@
 .tips-img {
   width: 200px;
 }
+
+#cta .container {
+  background-color: #7d7d7d;
+  height: 100px;
+}
+
+#cta h3 {
+  line-height: 100px;
+}
