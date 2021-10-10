@@ -16,38 +16,29 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
-    <title>Hello, world!</title>
+    <title>Home</title>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-bg">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="img/2.jpg" alt="animek" width="40" height="40" />
-          Laskar RedBull
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Cari </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cari</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Masuk</a>
+              <a class="nav-link" href="#">Masuk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Daftar</a>
+              <a class="nav-link" href="#">Daftar</a>
             </li>
           </ul>
         </div>
@@ -60,15 +51,18 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 py-5">
-            <h1>
-              Tempat untuk Mendapatkan <br />
-              mengenai 4 Sehat 5 Sempurna
+            <h1 class="jumbotron-h1">
+              Tempat Untuk Mendapatkan Informasi <br />
+              mengenai 4 sehat 5 sempurna
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus ipsum ea qui! Deserunt, quia molestiae. Facilis excepturi voluptates exercitationem ipsum ipsa illo quis rerum ratione molestiae voluptas, eaque fugiat.
+              Brand adalah website yang menyediakan informasi mengenai anjuran pola hidup sehat. Tentang 4 sehat 5 sempurna. Tak hanya itu kami juga memberikan informasi mengenai buah buahan, sayur sayuran dan hewan. Yang tentunya bisa
+              beranfaat. Serta kami memberikan tips yang mana layak di konsumsi
             </p>
-            <button type="button" class="btn btn-primary btn-md ms-auto">Cari</button>
-            <button type="button" class="btn btn-secondary btn-md ms-auto">Review</button>
+            <a href="#" class="btn btn-satu">Cari</a>
+            <a href="#" class="btn btn-dua">Review</a>
+            <!-- <button type="button" class="btn btn-primary btn-md ms-auto">Cari</button>
+            <button type="button" class="btn btn-secondary btn-md ms-auto">Review</button> -->
           </div>
           <div class="col-md-4 py-5">
             <img class="jumbotron-img" src="img/jumbotron.jpg" alt="gambar alam" />
@@ -82,8 +76,8 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-8">
-            <h3>4 Sehat 5 Sempurna ?</h3>
-            <p>Apa itu 4 sehat 5 Sempurna ?</p>
+            <h3>4 Sehat 5 Sempurna</h3>
+            <p class="mb-4">Apa itu 4 sehat 5 Sempurna ?</p>
           </div>
         </div>
         <!-- row gambar -->
@@ -111,9 +105,9 @@
     <section id="tips">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-6 text-center">
+          <div class="col-md-6 text-center">
             <h3>Pentingnya Pola Hidup Sehat</h3>
-            <p>
+            <p class="mb-4">
               Di masa pandemi sekarang, kita perlu kita perlu menjaga kesehatan kita. Termasuk pola makan, karena apapun yang kita makan akan berdampak terhadap kesehatan. Berikut adalah tips untuk memilih makanan yang sehat dan layak di
               konsumsi
             </p>
@@ -122,17 +116,17 @@
         <div class="row justify-content-center text-center">
           <div class="col-md-4">
             <img src="img/kebersihan1.jpg" alt="" class="tips-img" />
-            <h3>Kebersihan & Kondisi</h3>
+            <h3 class="mt-5 mb-3">Kebersihan & Kondisi</h3>
             <p>Kebersihan Adalah hal yang paling penting. Kemudian dilanjutkan dengan kondisi makanan yang akan kita konsumsi</p>
           </div>
           <div class="col-md-4">
             <img src="img/porsi.jpg" alt="" class="tips-img" />
-            <h3>Porsi & Gizi</h3>
+            <h3 class="mt-5 mb-3">Porsi & Gizi</h3>
             <p>Porsi makanan yang kita makan haruslah sesuai dengan kebutuhan dan gizi kita. Agar terpenuhinya segala hal yang di butuhkan oleh tubuh kita</p>
           </div>
           <div class="col-md-4">
             <img src="img/olahraga1.jpg" alt="" class="tips-img" />
-            <h3>Olahraga</h3>
+            <h3 class="mt-5 mb-3">Olahraga</h3>
             <p>Jika pemilihan makanan, porsi sudah mampu kita laksanakan. Rutinlah berolah raga, agar tubuh kita menjadi fit dan niscaya terhidar dari penyakit.</p>
           </div>
         </div>
@@ -144,16 +138,16 @@
     <section id="cta">
       <div class="container rounded-3">
         <div class="row justify-content-center">
-          <div class="col-6">
-            <h3 class="ms-5">Tertarik dengan .. ?</h3>
+          <div class="col-md-6">
+            <h3 class="cta-h3">Tertarik dengan brand ?</h3>
           </div>
           <div class="col-3">
-            <p>Punya Informasi lainnya ?</p>
-            <a href="" class="btn btn-outline-secondary">Ayo Tulis </a>
+            <p class="mt-2">Punya Informasi lainnya ?</p>
+            <a href="" class="btn btn-dua">Ayo Tulis </a>
           </div>
           <div class="col-3">
-            <p>Merasa Terbantu?</p>
-            <a href="" class="btn btn-outline-secondary">Ayo Ulas</a>
+            <p class="mt-2">Merasa Terbantu?</p>
+            <a href="" class="btn btn-satu">Ayo Ulas</a>
           </div>
         </div>
       </div>
@@ -163,11 +157,13 @@
     <!-- footer -->
     <footer class="py-3 my-4">
       <p class="text-center text-muted">
-        Create With <span style="color: red"><i class="bi bi-heart-fill"></i></span> By Laskar Banteng Merah
+        Create With <span class="love-icon"><i class="bi bi-heart-fill"></i></span> By Laskar Banteng Merah
       </p>
     </footer>
     <!-- akhir footer -->
 
+    <!-- bootstraps Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- link Ke Js -->
     <script src="js/script.js"></script>
   </body>
