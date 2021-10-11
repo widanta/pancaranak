@@ -79,11 +79,13 @@
   .pengertian-img {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
 
   /* cta */
   #cta .container {
     height: 200px;
+    width: 95%;
   }
 
   .cta-h3 {
