@@ -7,74 +7,89 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/masuk.css" />
+
+    <title>Hello, world!</title>
   </head>
-
-  <!-- css -->
-  <link rel="stylesheet" href="css/masuk.css" />
-
   <body>
-    <section id="card">
+    <section id="masuk">
       <div class="container">
-        <div class="row justify-content-center mt-5">
-          <div class="col-sm-6 card-bg">
-            <div class="card border-0">
-              <div class="card-body">
-                <h1 class="card-title">Registrasi</h1>
-                <h3 class="card-subtitle mt-4">Ayo Mulai</h3>
-                <p class="card-text mt-3 mb-5">Mari berkreasi bersama. Temukan informasi menarik di sini.</p>
-                <form>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nama Depan</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Email</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nama Belakang</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">No Telp</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Konfirmasi Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
-                      </div>
-                    </div>
-                  </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="container-input">
+              <h2 class="h2-login ms-md-5">Regristasi</h2>
+              <h5 class="mt-4 ms-md-5">Ayo Mulai</h5>
+              <p class="ms-md-5">
+                Mari berkreasi bersama. Temukan informasi <br />
+                menarik di sini.
+              </p>
 
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label" for="exampleCheck1">kamu menyetujui Kebijakan Cookie dan Ketentuan Pemakaian.</label>
+              <div class="row justify-content-center">
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label for="namaD" class="form-label">Nama Depan</label>
+                    <input type="text" class="form-control" id="namaD" name="namaD" />
                   </div>
-                  <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-secondary btn-sm mt-4">Buat akun</button>
+                </div>
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label for="namaB" class="form-label">Nama Belakang</label>
+                    <input type="text" class="form-control" id="namaB" name="namaB" />
                   </div>
-
-                  <div class="text text-center">Apakah benar belum memiliki akun ? <a href="index.html">Daftar</a></div>
-                </form>
+                </div>
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="email" name="email" />
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label for="telepon" class="form-label">No Telepon</label>
+                    <input type="text" class="form-control" id="telepon" name="telepon" />
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" />
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label for="passwordC" class="form-label">Konfirmasi Password</label>
+                    <input type="password" class="form-control" id="passwordC" name="passwordC" />
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault"> kamu menyetujui Kebijakan Cookie dan Ketentuan Pemakaian. </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-11">
+                  <div class="mb-3">
+                    <button class="btn btn-dark float-end btn-buat" type="submit">Buat Akun</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-12 text-center mt-4">
+                  <p>Apakah benar belum memiliki akun ? <a href="">Masuk</a></p>
+                </div>
               </div>
             </div>
           </div>
-
           <div class="col-md-6">
-            <img src="img/1.jpg" alt="" class="img-card" />
+            <img src="img/sign up.png" alt="" class="img-login ms-auto d-block" />
           </div>
         </div>
       </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
