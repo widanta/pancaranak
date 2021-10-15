@@ -1,100 +1,80 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  </head>
 
-</head>
-<body> 
-  <section id="card">
-    <div class="container">
-      
-      <div class="row justify-content-center mt-5">
-        <div class="col-sm-6">
-         
-          <div class="card" style="width: auto;">
-            <div class="card-body">
-              <h5 class="card-title">Registrasi</h5>
-              <h6 class="card-subtitle mt-5">Ayo Mulai</h6>
-              <p class="card-text mt-3">Mari berkreasi bersama. Temukan ribuan resep menarik di sini.</p>
-              <form>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Nama Depan</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <!-- css -->
+  <link rel="stylesheet" href="css/masuk.css" />
 
+  <body>
+    <section id="card">
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-sm-6 card-bg">
+            <div class="card border-0">
+              <div class="card-body">
+                <h1 class="card-title">Registrasi</h1>
+                <h3 class="card-subtitle mt-4">Ayo Mulai</h3>
+                <p class="card-text mt-3 mb-5">Mari berkreasi bersama. Temukan informasi menarik di sini.</p>
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nama Depan</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Email</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nama Belakang</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">No Telp</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Konfirmasi Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Nama Belakang</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">No Telp</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Konfirmasi Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                    <label class="form-check-label" for="exampleCheck1">kamu menyetujui Kebijakan Cookie dan Ketentuan Pemakaian.</label>
                   </div>
-                  
-                </div>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary btn-sm mt-4">Buat akun</button>
+                  </div>
 
-
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">kamu menyetujui Kebijakan Cookie dan Ketentuan Pemakaian.</label>  
-
-
-
-                </div> 
-                <div class="d-flex justify-content-end">
-                  <button type="button" class="btn btn-secondary btn-sm mt-05"> Buat akun</button>
-                </div>
-
-
-                <div class="text mt-2 text-center">
-                  Apakah benar belum memiliki akun ? <a href="">masuk</a>
-                </div>
-
-
-              </form>
-              
-
+                  <div class="text text-center">Apakah benar belum memiliki akun ? <a href="index.html">Daftar</a></div>
+                </form>
+              </div>
             </div>
           </div>
-          
-        </div>
-        
 
-        <div class="col-sm-6" style="border: solid; background-color: grey">
-
+          <div class="col-md-6">
+            <img src="img/1.jpg" alt="" class="img-card" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
