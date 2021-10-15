@@ -8,6 +8,18 @@
   background-color: #f5f5f5;
 }
 
+.nav-daftar {
+  background-color: green;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 0 8px;
+}
+
 /* jumbotron */
 .jumbotron-img {
   width: 350px;
