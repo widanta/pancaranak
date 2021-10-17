@@ -68,7 +68,6 @@ body {
 .img-card-modal {
   width: 200px;
   height: 200px;
-  text-align: center;
 }
 
 .card-group {
@@ -84,10 +83,12 @@ body {
     display: none;
   }
 
-  /* .img-card-modal {
+  .img-card-modal {
     display: block;
     margin: 0 auto 16px;
-    width: 200px;
-    height: 200px;
-  } */
+  }
+
+  .container-ul {
+    width: 100%;
+  }
 }
