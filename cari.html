@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
+    <!-- link Ke Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="css/cari.css" />
 
@@ -19,7 +22,7 @@
       <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-bg">
       <div class="container">
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#">PANCARANAK.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,6 +33,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cari.html">Cari</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tulis.html">Tulis</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="masuk.html">Masuk</a>
@@ -47,13 +53,14 @@
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="jumbotron-h1 text-light mb-3">Ayo Temukan informasi di sini</h1>
             <div class="input-group mb-3">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</button>
+              <button class="btn btn-satu dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Hewan</a></li>
                 <li><a class="dropdown-item" href="#">Buah</a></li>
                 <li><a class="dropdown-item" href="#">Sayur</a></li>
               </ul>
-              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+              <input type="text" class="form-control">
+              <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
             </div>
           </div>
         </div>
@@ -70,10 +77,63 @@
             <p>Hasil pencarian dari keyword</p>
           </div>
         </div>
+
+        <div class="row justify-content-center card-group">
+          <div class="col-md-8 mb-5">
+            <a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#pisang" > 
+              <div class="card">
+                <img src="img/pisang.jpg" class="card-img-top img-card-cari" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-center ">Pisang</h5>
+                  <p class="card-text text-center">Pisang adalah nama umum yang diberikan pada tumbuhan dari suku Musaceae.</p>
+                </div>
+              </div>
+            </a>
+            
+
+          <!-- Modal [ ini content] -->
+
+        <div class="modal fade modal-container" id="pisang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- isi sesuai content -->
+                <div class="container-fluid">
+                  <div class="row justify-content-center ms-auto">
+                    <div class="col-md-3">
+                      <img src="img/pisang.jpg" alt="" class="img-card-modal">
+                    </div>
+                    <div class="col-md ms-5">
+                      <ul class="list-group">
+                        <li class="list-group-item"><h1>Pisang</h1></li>
+                        <li class="list-group-item">Nama latin : Musa </li>
+                        <li class="list-group-item">Nama Suku : Suku Musaceae</li>
+                        <li class="list-group-item">Bahasa Ingris : Banana</li>
+                        <li class="list-group-item">Bahasa Bali : Biu</li>
+                        <li class="list-group-item">Deskripsi : Pisang adalah nama umum yang diberikan pada tumbuhan terna raksasa berdaun besar memanjang dari suku Musaceae. Beberapa jenisnya (Musa acuminata, M. balbisiana, dan M. ×paradisiaca) menghasilkan buah konsumsi yang dinamakan sama. </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- akhir modal content -->
+          </div>
+        </div>
+
         <div class="row mt-5">
           <div class="col-md-2">
             <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="btn btn-dua dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 Kategori
               </a>
             
@@ -97,7 +157,7 @@
           <!-- card 1---------------------------------------------- -->
           <div class="col-md-4 mt-4">
             <div class="card">
-              <img src="img/1.jpg" class="card-img-top img-card img-card" alt="..." />
+              <img src="img/pisang.jpg" class="card-img-top img-card img-card" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Pisang</h5>
                 <p class="card-text">Pisang adalah nama umum yang diberikan pada tumbuhan dari suku Musaceae.</p>
@@ -107,6 +167,7 @@
           </div>
 
           <!-- Modal [ ini content] -->
+
         <div class="modal fade modal-container" id="pisang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -119,9 +180,9 @@
                 <div class="container-fluid">
                   <div class="row justify-content-center ms-auto">
                     <div class="col-md-3">
-                      <img src="img/1.jpg" alt="" width="200" height="200">
+                      <img src="img/pisang.jpg" alt="" class="img-card-modal">
                     </div>
-                    <div class="col ms-5">
+                    <div class="col-md ms-5">
                       <ul class="list-group">
                         <li class="list-group-item"><h1>Pisang</h1></li>
                         <li class="list-group-item">Nama latin : Musa </li>
@@ -147,7 +208,7 @@
         <!-- card 2---------------------------------------------- -->
         <div class="col-md-4 mt-4">
           <div class="card">
-            <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+            <img src="img/jeruk.jpg" class="card-img-top img-card" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Jeruk</h5>
               <p class="card-text">Jeruk atau limau adalah semua tumbuhan berbunga anggota marga Citrus dari suku Rutaceae.</p>
@@ -170,7 +231,7 @@
 
                 <div class="row justify-content-center ms-auto">
                   <div class="col-md-3">
-                    <img src="img/1.jpg" alt="" width="200" height="200">
+                    <img src="img/jeruk.jpg" alt="" class="img-card-modal">
                   </div>
                   <div class="col ms-5">
                     <ul class="list-group">
@@ -198,7 +259,7 @@
       <!-- card 3---------------------------------------------- -->
       <div class="col-md-4 mt-4">
         <div class="card">
-          <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+          <img src="img/mangga.jpg" class="card-img-top img-card" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Mangga</h5>
             <p class="card-text">Mangga atau mempelam adalah nama sejenis buah, demikian pula nama pohonnya.</p>
@@ -221,7 +282,7 @@
 
               <div class="row justify-content-center ms-auto">
                 <div class="col-md-3">
-                  <img src="img/1.jpg" alt="" width="200" height="200">
+                  <img src="img/mangga.jpg" alt="" class="img-card-modal">
                 </div>
                 <div class="col ms-5">
                   <ul class="list-group">
@@ -249,10 +310,10 @@
     <!-- card 4---------------------------------------------- -->
     <div class="col-md-4 mt-4">
       <div class="card">
-        <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+        <img src="img/lengkeng.png" class="card-img-top img-card" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Lengkeng</h5>
-          <p class="card-text">Lengkeng, longan, Dimocarpus longan, suku lerak-lerakan atau Sapindaceae.</p>
+          <p class="card-text">Lengkeng, Dimocarpus longan, suku lerak-lerakan atau Sapindaceae.</p>
           <a href="#" class="link-card text-end d-block text-decoration-none"data-bs-toggle="modal" data-bs-target="#lengkeng">Kunjungi ></a>
         </div>
       </div>
@@ -272,7 +333,7 @@
 
             <div class="row justify-content-center ms-auto">
               <div class="col-md-3">
-                <img src="img/1.jpg" alt="" width="200" height="200">
+                <img src="img/lengkeng.png" alt="" class="img-card-modal">
               </div>
               <div class="col ms-5">
                 <ul class="list-group">
@@ -300,7 +361,7 @@
   <!-- card 5---------------------------------------------- -->
   <div class="col-md-4 mt-4">
     <div class="card">
-      <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+      <img src="img/durian.jpg" class="card-img-top img-card" alt="..." />
       <div class="card-body">
         <h5 class="card-title">Durian</h5>
         <p class="card-text">Durio adalah nama marga durian; termasuk ke dalam suku Malvaceae.</p>
@@ -323,7 +384,7 @@
 
           <div class="row justify-content-center ms-auto">
             <div class="col-md-3">
-              <img src="img/1.jpg" alt="" width="200" height="200">
+              <img src="img/durian.jpg" alt="" class="img-card-modal">
             </div>
             <div class="col ms-5">
               <ul class="list-group">
@@ -351,7 +412,7 @@
 <!-- card 6---------------------------------------------- -->
 <div class="col-md-4 mt-4">
   <div class="card">
-    <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+    <img src="img/bayam.png" class="card-img-top img-card" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Sayur Bayam</h5>
       <p class="card-text">Bayam adalah tumbuhan yang biasa ditanam untuk dikonsumsi daunnya.</p>
@@ -374,7 +435,7 @@
 
         <div class="row justify-content-center ms-auto">
           <div class="col-md-3">
-            <img src="img/1.jpg" alt="" width="200" height="200">
+            <img src="img/bayam.png" alt="" class="img-card-modal">
           </div>
           <div class="col ms-5">
             <ul class="list-group">
@@ -402,7 +463,7 @@
 <!-- card 7---------------------------------------------- -->
 <div class="col-md-4 mt-4">
   <div class="card">
-    <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+    <img src="img/daun-bawang.png" class="card-img-top img-card" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Daun Bawang</h5>
       <p class="card-text">Daun bawang merupakan jenis sayuran dari kelompok bawang.</p>
@@ -425,7 +486,7 @@
 
         <div class="row justify-content-center ms-auto">
           <div class="col-md-3">
-            <img src="img/1.jpg" alt="" width="200" height="200">
+            <img src="img/daun-bawang.png" alt="" class="img-card-modal">
           </div>
           <div class="col ms-5">
             <ul class="list-group">
@@ -453,7 +514,7 @@
 <!-- card 8---------------------------------------------- -->
 <div class="col-md-4 mt-4">
   <div class="card">
-    <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+    <img src="img/sawi.png" class="card-img-top img-card" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Sayur Sawi</h5>
       <p class="card-text">Sawi adalah sekelompok tumbuhan dari marga Brassica.</p>
@@ -476,7 +537,7 @@
 
         <div class="row justify-content-center ms-auto">
           <div class="col-md-3">
-            <img src="img/1.jpg" alt="" width="200" height="200">
+            <img src="img/sawi.png" alt="" class="img-card-modal">
           </div>
           <div class="col ms-5">
             <ul class="list-group">
@@ -504,10 +565,10 @@
 <!-- card 9---------------------------------------------- -->
 <div class="col-md-4 mt-4">
   <div class="card">
-    <img src="img/1.jpg" class="card-img-top img-card" alt="..." />
+    <img src="img/pare.png" class="card-img-top img-card" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Sayur Pare</h5>
-      <p class="card-text">Peria atau pare adalah tumbuhan merambat yang berasal dari wilayah Asia Tropis.</p>
+      <p class="card-text">Peria atau pare adalah tumbuhan merambat yang berasal dari Asia.</p>
       <a href="#" class="link-card text-end d-block text-decoration-none"data-bs-toggle="modal" data-bs-target="#pare">Kunjungi ></a>
     </div>
   </div>
@@ -527,7 +588,7 @@
 
         <div class="row justify-content-center ms-auto">
           <div class="col-md-3">
-            <img src="img/1.jpg" alt="" width="200" height="200">
+            <img src="img/pare.png" alt="" class="img-card-modal">
           </div>
           <div class="col ms-5">
             <ul class="list-group">
@@ -552,9 +613,17 @@
 
 <!-- akhir card 9--------------------------------------- -->
 
+<!-- footer -->
+<footer class="py-3 my-4">
+  <p class="text-center text-muted">
+    Create With <span class="love-icon"><i class="bi bi-heart-fill"></i></span> By Laskar Banteng Merah
+  </p>
+</footer>
+<!-- akhir footer -->
+
 <!-- script -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     
   </body>
 </html>

@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.navbar-bg {
+  background-color: white;
+}
+
+.nav-daftar {
+  background-color: green;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 0 8px;
+}
+
+#content {
+  margin-top: 100px;
+}
+
+.btn-container {
+  background-color: #dadada;
+  border-radius: 10px;
+  margin-top: 64px;
+}
+
+.btn-satu {
+  width: 49%;
+  border-radius: 10px;
+}
+
+.btn-dua {
+  width: 49%;
+  border-radius: 10px;
+}
+
+.btn-kirim {
+  background-color: green;
+  border: 0;
+}
+
+.container-tulis {
+  background-color: white;
+  margin-top: 48px;
+  border-radius: 10px;
+}
+
+.container-ulas {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.img-tulis {
+  width: 150px;
+  height: 150px;
+}
+
+.love-icon {
+  color: red;
+}

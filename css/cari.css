@@ -46,6 +46,16 @@ body {
   font-size: 32px;
 }
 
+.btn-satu {
+  background-color: green;
+  color: white;
+}
+
+.btn-dua {
+  background-color: green;
+  color: white;
+}
+
 #card {
   margin-top: 100px;
 }
@@ -55,6 +65,29 @@ body {
   height: 196px;
 }
 
+.img-card-modal {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
 .card-group {
   margin-top: 40px;
+}
+
+.love-icon {
+  color: red;
+}
+
+@media (max-width: 425px) {
+  .btn-dua {
+    display: none;
+  }
+
+  /* .img-card-modal {
+    display: block;
+    margin: 0 auto 16px;
+    width: 200px;
+    height: 200px;
+  } */
 }
