@@ -1,1 +1,54 @@
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.navbar-bg {
+  background-color: white;
+}
+
+.nav-daftar {
+  background-color: green;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 0 8px;
+}
+
+#content {
+  margin-top: 100px;
+}
+.img-biodata {
+  border-radius: 100%;
+}
+.btn-container {
+  background-color: #dadada;
+  border-radius: 10px;
+  margin-top: 64px;
+}
+
+
+.btn-kirim {
+  background-color: green;
+  border: 0;
+}
+
+.container-biodata {
+  background-color: white;
+  margin-top: 48px;
+  border-radius: 10px;
+}
+
+
+.love-icon {
+  color: red;
+}
