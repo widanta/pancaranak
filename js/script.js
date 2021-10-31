@@ -24,7 +24,7 @@ $(document).ready(function () {
     const scroll = $(window).scrollTop();
 
     // jika tinggi scroll lewat dari 300 tampilkan bg
-    if (scroll >= 500) {
+    if (scroll >= 950) {
       $("#navBg").css("background-color", "#d4d4d4");
     } else {
       $("#navBg").css("background-color", "transparent");
