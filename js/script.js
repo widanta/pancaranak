@@ -17,4 +17,17 @@ $(document).ready(function () {
     $("#ulas").hide();
     $("#tulis").show();
   });
+
+  // seleksi dulu window
+  $(window).scroll(() => {
+    // selksi scroll ke atas
+    const scroll = $(window).scrollTop();
+
+    // jika tinggi scroll lewat dari 300 tampilkan bg
+    if (scroll >= 500) {
+      $("#navBg").css("background-color", "#d4d4d4");
+    } else {
+      $("#navBg").css("background-color", "transparent");
+    }
+  });
 });
