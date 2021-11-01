@@ -20,12 +20,14 @@
     <!-- jumbotron -->
     <section id="jumbotron">
       <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-bg" id="navBg">
-      <div class="container">
-        <a class="navbar-brand" href="#">PANCARANAK.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-bg" id="navBg">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/pancaranak.png" alt="" height="30" /></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filter-right nav-svg" viewBox="0 0 16 16">
+              <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+            </svg>
+          </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -41,14 +43,14 @@
               <a class="nav-link" href="masuk.html">Masuk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-daftar" href="daftar.html">Daftar</a>
+              <a class="nav-link text-light nav-daftar" href="daftar.html">Daftar</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- end of navbar -->
-      <div class="py-5 text-center container">
+      <!-- <div class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="jumbotron-h1 text-light mb-3">Ayo Temukan informasi di sini</h1>
@@ -62,6 +64,27 @@
               <input type="text" class="form-control">
               <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
             </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="py-5 text-center container">
+        <div class="row justify-content-center py-lg-5">
+          <div class="col-md-8 mx-auto">
+            <h1 class="jumbotron-h1 text-light mb-3">Ayo Temukan informasi di sini</h1>
+          </div>
+          <div class="col-md-6">
+            <form method="POST">
+              <div class="input-group">
+                <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Semua </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Hewan</a></li>
+                  <li><a class="dropdown-item" href="#">Buah</a></li>
+                  <li><a class="dropdown-item" href="#">Sayur</a></li>
+                </ul>
+                <input type="text" name="search" class="form-control" aria-label="Text input with 2 dropdown buttons" />
+                <button class="btn btn-cari" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
